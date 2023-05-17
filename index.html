@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
-  <title>Alive festival - Tickets</title>
+  <title>Event Tickets</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #6413a7a4;
+      font-family: monospace;
+      background: linear-gradient(135deg, #6c5ce7, #4b39c1);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
     }
 
     .container {
@@ -15,18 +20,22 @@
       align-items: center;
       justify-content: center;
       height: 100vh;
+      padding: 20px;
     }
 
     .text-container {
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
       margin-bottom: 20px;
+      text-align: center;
+      color: white;
     }
 
     .typewriter-text {
       overflow: hidden;
-      border-right: .15em solid black;
+      border-right: .15em solid white;
       white-space: nowrap;
       letter-spacing: .15em;
       animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
@@ -49,7 +58,7 @@
       }
 
       50% {
-        border-color: black
+        border-color: white
       }
     }
 
@@ -59,14 +68,27 @@
       font-size: 18px;
       font-weight: bold;
       text-decoration: none;
-      background-color: #0a030a;
-      color: rgb(255, 255, 255);
+      background-color: rgba(255, 255, 255, 0.3);
+      color: rgba(228, 215, 215, 0.918);
       border-radius: 4px;
+      border: none;
       transition: background-color 0.3s ease;
     }
 
     .button:hover {
-      background-color: #302f30;
+      background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    @media only screen and (max-width: 600px) {
+      .text-container {
+        margin-bottom: 10px;
+        height: 100%;
+      }
+
+      .button {
+        font-size: 16px;
+        padding: 10px 20px;
+      }
     }
   </style>
 </head>
@@ -76,7 +98,8 @@
     <div class="text-container">
       <h1><span class="typewriter-text">Get Your Tickets Now!</span></h1>
     </div>
-    <a href="https://www.songkick.com/artists/10274458" class="button">Tickets :)</a>
+    <a href="https://www.songkick.com/artists/10274458" class="button">Tickets!</a>
   </div>
 </body>
+
 </html>
