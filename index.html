@@ -3,11 +3,11 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Alive Festival - Tickets</title>
+  <title>Event Tickets</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      font-family: monospace;
+      font-family: Arial, sans-serif;
       background: linear-gradient(135deg, #6c5ce7, #4b39c1);
       background-size: cover;
       background-repeat: no-repeat;
@@ -62,6 +62,12 @@
       }
     }
 
+    .button-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
     .button {
       display: inline-block;
       padding: 12px 24px;
@@ -69,7 +75,7 @@
       font-weight: bold;
       text-decoration: none;
       background-color: rgba(255, 255, 255, 0.3);
-      color: rgba(255, 255, 255, 0.918);
+      color: white;
       border-radius: 4px;
       border: none;
       transition: background-color 0.3s ease;
@@ -98,7 +104,9 @@
     <div class="text-container">
       <h1><span class="typewriter-text">Get Your Tickets Now!</span></h1>
     </div>
-    <a href="https://www.songkick.com/artists/10274458" class="button">Tickets!</a>
+    <div class="button-container">
+      <a href="https://www.songkick.com/artists/10274458" class="button">Tickets!</a>
+    </div>
   </div>
 </body>
 
